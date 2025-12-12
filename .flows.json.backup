@@ -1,0 +1,1466 @@
+[
+    {
+        "id": "de17f7892e717822",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a560bfbb576d9d7d",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e6dbc91d70126573",
+        "type": "tab",
+        "label": "Flow 4",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "996e675098c34be2",
+        "type": "tab",
+        "label": "Flow 7",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "b0a7353060c263a8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bc26032cf4ac47de",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "headerContent": "page",
+        "navigationStyle": "default",
+        "titleBarStyle": "default",
+        "showReconnectNotification": true,
+        "notificationDisplayTime": 5,
+        "showDisconnectNotification": true,
+        "allowInstall": true
+    },
+    {
+        "id": "tab_clock",
+        "type": "ui_tab",
+        "name": "Clock Dashboard",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_clock",
+        "type": "ui_group",
+        "name": "Real-time Clock",
+        "tab": "tab_clock",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7dad62e6860aec8d",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "emqxsl-ca (1).crt",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "1620c562288a76bb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "j11f6a11.ala.asia-southeast1.emqxsl.com",
+        "port": "8883",
+        "tls": "7dad62e6860aec8d",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "5",
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "eeb505e4a2518d02",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#9bbe3c",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "f77fc38b5eeef9eb",
+        "type": "ui-page",
+        "name": "Temperature/Humadity/Water",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page1",
+        "icon": "home-thermometer-outline",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 2,
+        "className": "",
+        "visible": true,
+        "disabled": false
+    },
+    {
+        "id": "ace78fe2d9b0df50",
+        "type": "ui-group",
+        "name": "Temperature",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 5,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "461c46d039b06d98",
+        "type": "ui-group",
+        "name": "Humadity",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 6,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "cd178e09a80fb3aa",
+        "type": "ui-group",
+        "name": "Water",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 7,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "df73208929ef36e6",
+        "type": "ui-group",
+        "name": "Current Temperature (°C)",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "71d514fb4c02faed",
+        "type": "ui-group",
+        "name": "Safety levels",
+        "page": "f77fc38b5eeef9eb",
+        "width": "13",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1c4e18658b9e07a2",
+        "type": "ui-group",
+        "name": "Current Humadity (%)",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b3a81414e1dc632e",
+        "type": "ui-group",
+        "name": "Current water value",
+        "page": "f77fc38b5eeef9eb",
+        "width": "4",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "false",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "ce2021f045348195",
+        "type": "ui-page",
+        "name": "Page 8",
+        "ui": "bc26032cf4ac47de",
+        "path": "/page8",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "eeb505e4a2518d02",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 3,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "8417423d7412ee99",
+        "type": "ui-group",
+        "name": "Đèn Cổng",
+        "page": "ce2021f045348195",
+        "width": 4,
+        "height": 2,
+        "order": 1
+    },
+    {
+        "id": "7b5d19406a3a8933",
+        "type": "ui-group",
+        "name": "Đèn Bãi Xe",
+        "page": "ce2021f045348195",
+        "width": 4,
+        "height": 2,
+        "order": 2
+    },
+    {
+        "id": "3a6c70c0879c7621",
+        "type": "ui-group",
+        "name": "Đèn Trong Nhà",
+        "page": "ce2021f045348195",
+        "width": 4,
+        "height": 2,
+        "order": 3
+    },
+    {
+        "id": "ui_theme",
+        "type": "ui-theme",
+        "name": "Theme",
+        "colors": {
+            "primary": "#4a90e2"
+        }
+    },
+    {
+        "id": "ui_page_gate",
+        "type": "ui-page",
+        "name": "Home Control",
+        "ui": "bc26032cf4ac47de",
+        "path": "/home",
+        "icon": "columns",
+        "layout": "grid",
+        "theme": "ui_theme",
+        "order": 1
+    },
+    {
+        "id": "group_gate",
+        "type": "ui-group",
+        "name": "Main Gate",
+        "page": "ui_page_gate",
+        "width": 4,
+        "height": 2,
+        "order": 2
+    },
+    {
+        "id": "group_door",
+        "type": "ui-group",
+        "name": "Room Door",
+        "page": "ui_page_gate",
+        "width": 4,
+        "height": 2,
+        "order": 1
+    },
+    {
+        "id": "06d5142f27d75a56",
+        "type": "inject",
+        "z": "de17f7892e717822",
+        "name": "Clock Tick",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 580,
+        "y": 180,
+        "wires": [
+            [
+                "767a39f544daa918"
+            ]
+        ]
+    },
+    {
+        "id": "767a39f544daa918",
+        "type": "ui_template",
+        "z": "de17f7892e717822",
+        "group": "group_clock",
+        "name": "Real-time Clock with Date",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "format": "<div style='display:flex; justify-content:center; align-items:center; flex-direction:column; font-family: Arial, sans-serif;'>\n    <div style='font-size:48px; font-weight:bold; color: #ffffff; background: linear-gradient(135deg, #ff7e5f, #feb47b); padding:20px 50px; border-radius:20px; box-shadow: 0 8px 20px rgba(0,0,0,0.4);'>\n        <span id='time_display'>--:--:--</span>\n    </div>\n    <div style='margin-top:15px; font-size:28px; color:#ffffff; background: linear-gradient(135deg, #43cea2, #185a9d); padding:10px 30px; border-radius:15px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);'>\n        <span id='date_display'>--/--/----</span>\n    </div>\n    <div style='margin-top:10px; font-size:18px; color:#333;'>Real-time Dashboard Clock</div>\n</div>\n\n<script>\n(function(scope){\n    function updateClock(){\n        var now = new Date();\n        var h = ('0' + now.getHours()).slice(-2);\n        var m = ('0' + now.getMinutes()).slice(-2);\n        var s = ('0' + now.getSeconds()).slice(-2);\n        var d = ('0' + now.getDate()).slice(-2);\n        var mo = ('0' + (now.getMonth() + 1)).slice(-2);\n        var y = now.getFullYear();\n        document.getElementById('time_display').innerText = h + ':' + m + ':' + s;\n        document.getElementById('date_display').innerText = d + '/' + mo + '/' + y;\n    }\n    updateClock();\n    setInterval(updateClock, 1000);\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 870,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ad0ab87ea9a53b5",
+        "type": "debug",
+        "z": "a560bfbb576d9d7d",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "839a35abcdb02921",
+        "type": "debug",
+        "z": "a560bfbb576d9d7d",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "848b90c64b4a959a",
+        "type": "debug",
+        "z": "a560bfbb576d9d7d",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1280,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7e028c8d59152f24",
+        "type": "ui-chart",
+        "z": "a560bfbb576d9d7d",
+        "group": "ace78fe2d9b0df50",
+        "name": "Temperature",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 830,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "34bb0bc613447b2b",
+        "type": "ui-gauge",
+        "z": "a560bfbb576d9d7d",
+        "name": "Temperature",
+        "group": "ace78fe2d9b0df50",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "units": "°C",
+        "icon": "thermometer",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 830,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59fcc3e7828d0c8b",
+        "type": "ui-chart",
+        "z": "a560bfbb576d9d7d",
+        "group": "461c46d039b06d98",
+        "name": "Humadity",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 820,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d3d6432481889892",
+        "type": "ui-gauge",
+        "z": "a560bfbb576d9d7d",
+        "name": "Humadity",
+        "group": "461c46d039b06d98",
+        "order": 1,
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "units": "%",
+        "icon": "thermometer-water",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "40",
+                "color": "#ffc800"
+            },
+            {
+                "from": "70",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 820,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ef746fc55074662",
+        "type": "ui-chart",
+        "z": "a560bfbb576d9d7d",
+        "group": "cd178e09a80fb3aa",
+        "name": "Water",
+        "label": "chart",
+        "order": 2,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#0095ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": 6,
+        "height": 8,
+        "className": "",
+        "interpolation": "linear",
+        "x": 1270,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e82153924ae192aa",
+        "type": "ui-gauge",
+        "z": "a560bfbb576d9d7d",
+        "name": "Water",
+        "group": "cd178e09a80fb3aa",
+        "order": 1,
+        "value": "payload",
+        "valueType": "msg",
+        "width": 3,
+        "height": 3,
+        "gtype": "gauge-half",
+        "gstyle": "needle",
+        "title": "gauge",
+        "alwaysShowTitle": false,
+        "units": "",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "1500",
+                "color": "#ffc800",
+                "text": "",
+                "textType": "label"
+            },
+            {
+                "from": "2500",
+                "color": "#ea5353",
+                "text": "",
+                "textType": "label"
+            }
+        ],
+        "min": 0,
+        "max": "4096",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 1270,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "061f4244e2b7b053",
+        "type": "mqtt in",
+        "z": "a560bfbb576d9d7d",
+        "name": "",
+        "topic": "esp32/sensors/temperature",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 570,
+        "y": 200,
+        "wires": [
+            [
+                "7e028c8d59152f24",
+                "34bb0bc613447b2b",
+                "6ad0ab87ea9a53b5",
+                "d76a9df7d730bebb"
+            ]
+        ]
+    },
+    {
+        "id": "e678bd729a72cc21",
+        "type": "mqtt in",
+        "z": "a560bfbb576d9d7d",
+        "name": "",
+        "topic": "esp32/sensors/humidity",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 560,
+        "y": 380,
+        "wires": [
+            [
+                "59fcc3e7828d0c8b",
+                "d3d6432481889892",
+                "839a35abcdb02921",
+                "a46fd6a7f1ac8676"
+            ]
+        ]
+    },
+    {
+        "id": "d1db4f668d4dc30b",
+        "type": "mqtt in",
+        "z": "a560bfbb576d9d7d",
+        "name": "",
+        "topic": "esp32/sensors/water",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1060,
+        "y": 380,
+        "wires": [
+            [
+                "6ef746fc55074662",
+                "e82153924ae192aa",
+                "848b90c64b4a959a",
+                "42cc67d346bd7b4f"
+            ]
+        ]
+    },
+    {
+        "id": "d76a9df7d730bebb",
+        "type": "ui-text",
+        "z": "a560bfbb576d9d7d",
+        "group": "df73208929ef36e6",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature (°C)",
+        "label": "Temperature (°C): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 850,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a46fd6a7f1ac8676",
+        "type": "ui-text",
+        "z": "a560bfbb576d9d7d",
+        "group": "1c4e18658b9e07a2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Humadity (%)",
+        "label": "Humadity (%): ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 840,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "42cc67d346bd7b4f",
+        "type": "ui-text",
+        "z": "a560bfbb576d9d7d",
+        "group": "b3a81414e1dc632e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Water",
+        "label": "Water value: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 1270,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9fa0a91513678bbf",
+        "type": "ui-text",
+        "z": "a560bfbb576d9d7d",
+        "group": "71d514fb4c02faed",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Temperature (°C) safety",
+        "label": "5(°C) <= Temperature <= 40 (°C)",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 1190,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "6f02d620ced64deb",
+        "type": "ui-text",
+        "z": "a560bfbb576d9d7d",
+        "group": "71d514fb4c02faed",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Humadity (%) safety",
+        "label": "30% <= Humadity <= 85%",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#717171",
+        "wrapText": false,
+        "className": "",
+        "x": 1180,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e0ee53775d4fbfec",
+        "type": "mqtt in",
+        "z": "e6dbc91d70126573",
+        "name": "LED Gate",
+        "topic": "esp32/status/led/gate",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 300,
+        "y": 240,
+        "wires": [
+            [
+                "e95a72322926d151",
+                "30c125cc5ac99873"
+            ]
+        ]
+    },
+    {
+        "id": "e95a72322926d151",
+        "type": "ui-led",
+        "z": "e6dbc91d70126573",
+        "group": "8417423d7412ee99",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "label": "Cổng",
+        "labelPlacement": "top",
+        "states": [
+            {
+                "value": "1",
+                "label": "Sáng",
+                "shape": "circle",
+                "color": "green"
+            },
+            {
+                "value": "0",
+                "label": "Tắt",
+                "shape": "circle",
+                "color": "red"
+            }
+        ],
+        "x": 640,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "30c125cc5ac99873",
+        "type": "ui-text",
+        "z": "e6dbc91d70126573",
+        "group": "8417423d7412ee99",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "label": "",
+        "format": "{{msg.payload == '1' ? 'Đèn bật' : 'Đèn tắt'}}",
+        "layout": "row-center",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "8c5616d6f4e3dbb5",
+        "type": "mqtt in",
+        "z": "e6dbc91d70126573",
+        "name": "LED Park",
+        "topic": "esp32/status/led/park",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "ef80b61fbedf9ac2",
+                "a0f0be8c585ea9c4"
+            ]
+        ]
+    },
+    {
+        "id": "ef80b61fbedf9ac2",
+        "type": "ui-led",
+        "z": "e6dbc91d70126573",
+        "group": "7b5d19406a3a8933",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "label": "Bãi xe",
+        "labelPlacement": "top",
+        "states": [
+            {
+                "value": "1",
+                "label": "Sáng",
+                "shape": "circle",
+                "color": "green"
+            },
+            {
+                "value": "0",
+                "label": "Tắt",
+                "shape": "circle",
+                "color": "red"
+            }
+        ],
+        "x": 640,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a0f0be8c585ea9c4",
+        "type": "ui-text",
+        "z": "e6dbc91d70126573",
+        "group": "7b5d19406a3a8933",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "label": "",
+        "format": "{{msg.payload == '1' ? 'Đèn bật' : 'Đèn tắt'}}",
+        "layout": "row-center",
+        "x": 640,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "17107dbd2ede1dd7",
+        "type": "mqtt in",
+        "z": "e6dbc91d70126573",
+        "name": "LED Indoor",
+        "topic": "esp32/status/led/indoor",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 300,
+        "y": 560,
+        "wires": [
+            [
+                "68de55ee69eb5e3c",
+                "e6bc43ce3634911b"
+            ]
+        ]
+    },
+    {
+        "id": "68de55ee69eb5e3c",
+        "type": "ui-led",
+        "z": "e6dbc91d70126573",
+        "group": "3a6c70c0879c7621",
+        "order": 1,
+        "width": 2,
+        "height": 1,
+        "label": "Trong nhà",
+        "labelPlacement": "top",
+        "states": [
+            {
+                "value": "1",
+                "label": "Sáng",
+                "shape": "circle",
+                "color": "green"
+            },
+            {
+                "value": "0",
+                "label": "Tắt",
+                "shape": "circle",
+                "color": "red"
+            }
+        ],
+        "x": 640,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e6bc43ce3634911b",
+        "type": "ui-text",
+        "z": "e6dbc91d70126573",
+        "group": "3a6c70c0879c7621",
+        "order": 2,
+        "width": 3,
+        "height": 1,
+        "label": "",
+        "format": "{{msg.payload == '1' ? 'Đèn bật' : 'Đèn tắt'}}",
+        "layout": "row-center",
+        "x": 640,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "btn_gate_open",
+        "type": "ui-button",
+        "z": "996e675098c34be2",
+        "group": "group_gate",
+        "label": "Open Gate",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "icon": "unlock",
+        "payload": "open",
+        "payloadType": "str",
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "gate_open_logic"
+            ]
+        ]
+    },
+    {
+        "id": "btn_gate_close",
+        "type": "ui-button",
+        "z": "996e675098c34be2",
+        "group": "group_gate",
+        "label": "Close Gate",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "icon": "lock",
+        "payload": "close",
+        "payloadType": "str",
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "mqtt_out_gate"
+            ]
+        ]
+    },
+    {
+        "id": "gate_state",
+        "type": "ui-text",
+        "z": "996e675098c34be2",
+        "group": "group_gate",
+        "order": 3,
+        "label": "Gate Status",
+        "format": "{{msg.payload}}",
+        "x": 1270,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "gate_open_logic",
+        "type": "function",
+        "z": "996e675098c34be2",
+        "name": "Gate Open 3s",
+        "func": "node.send({payload: \"open\"});\nsetTimeout(() => node.send({payload: \"stop\"}), 3000);\nreturn null;",
+        "outputs": 1,
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "mqtt_out_gate"
+            ]
+        ]
+    },
+    {
+        "id": "btn_door_open",
+        "type": "ui-button",
+        "z": "996e675098c34be2",
+        "group": "group_door",
+        "label": "Open Door",
+        "order": 1,
+        "width": 4,
+        "height": 1,
+        "icon": "door-open",
+        "payload": "open",
+        "payloadType": "str",
+        "x": 490,
+        "y": 580,
+        "wires": [
+            [
+                "mqtt_out_door"
+            ]
+        ]
+    },
+    {
+        "id": "btn_door_close",
+        "type": "ui-button",
+        "z": "996e675098c34be2",
+        "group": "group_door",
+        "label": "Close Door",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "icon": "door-closed",
+        "payload": "close",
+        "payloadType": "str",
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "mqtt_out_door"
+            ]
+        ]
+    },
+    {
+        "id": "door_state",
+        "type": "ui-text",
+        "z": "996e675098c34be2",
+        "group": "group_door",
+        "order": 3,
+        "label": "Door Status",
+        "format": "{{msg.payload}}",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "mqtt_out_gate",
+        "type": "mqtt out",
+        "z": "996e675098c34be2",
+        "name": "",
+        "topic": "esp32/cmd/gate",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1620c562288a76bb",
+        "x": 760,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "mqtt_out_door",
+        "type": "mqtt out",
+        "z": "996e675098c34be2",
+        "name": "",
+        "topic": "esp32/cmd/door",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1620c562288a76bb",
+        "x": 820,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "mqtt_in_gate",
+        "type": "mqtt in",
+        "z": "996e675098c34be2",
+        "name": "",
+        "topic": "esp32/status/gate",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 1000,
+        "y": 460,
+        "wires": [
+            [
+                "gate_state"
+            ]
+        ]
+    },
+    {
+        "id": "mqtt_in_door",
+        "type": "mqtt in",
+        "z": "996e675098c34be2",
+        "name": "",
+        "topic": "esp32/status/door",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1620c562288a76bb",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "door_state"
+            ]
+        ]
+    }
+]
